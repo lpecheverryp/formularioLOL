@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>Tabla</title>
+</head>
+<body>
+<script>
+function comparar()
+{   
+    
+    contrasenna=document.getElementById("contra1");    
+    texto=contrasenna.value;
+    
+    if(texto.length<7){
+        alert("Clave no valida!!!");
+        return false;
+    }
+    
+    return true;
+}
+
+
+</script>
+
+<style>
+	
+.division{
+text-align:center
+}
+	
+</style>
+<form action="index.php" onsubmit="return comparar()">
+	
+	<div class="division">
+	<label>Nombre:</label><br><input type="text" id="Nombre" name="Nombre" ><br>
+	</div>
+	<div class="division">
+	<label>Contrasenyan:</label><br><input type="text" id="contra1" name="contra1" ><br>
+	</div>
+	<div class="division">
+	<label>Verifique Contrasenyan:</label><br><input type="text" id="contra2" name="contra2" ><br>
+	</div>
+
+
+	<div class="division">
+	<input type="submit" value="Aceptar">
+	</div>
+
+
+</form>
+
+
+
+
+</body>
+</html>
